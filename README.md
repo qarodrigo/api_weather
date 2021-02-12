@@ -6,19 +6,18 @@ Desenvolver uma API REST para a consulta de temperaturas em cidades por meio de 
 
 1. Rota Única
 
-- Request
+    - Request
 
-```bash
-GET http://localhost:8080/v1/api/wheathers
-```bash
+        ```bash
+        GET http://localhost:8080/v1/api/wheathers
+        ```
+    - Body
 
-- Body
-
-```json
-{
-    "city": "Feira de Santana" 
-}
-```
+        ```json
+        {
+            "city": "Feira de Santana" 
+        }
+        ```
 
 - Retornos Possíveis
 

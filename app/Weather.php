@@ -10,7 +10,7 @@ class Weather extends Model
 
     public function getCity($request){
 
-        $apiKey = 'e486bb0c678a072b99d1423ee0185d60'; //api key openweathermap
+        $apiKey = ''; //api key openweathermap
         $weather = new Client ();
 
         $cityName = $request->city;

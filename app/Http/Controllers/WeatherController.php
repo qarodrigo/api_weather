@@ -13,7 +13,6 @@ class WeatherController extends Controller
     {
 
     $weather = new Weather();
-
     if($request->city){
         $response = $weather->getCity($request);
         return response()->json( new WeatherResource($response));

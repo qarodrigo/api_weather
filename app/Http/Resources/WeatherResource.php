@@ -14,9 +14,16 @@ class WeatherResource extends JsonResource
      */
     public function toArray($request)
     {
+
+        // dd($this);
         return [
-            'Cidade' => $this->name,
-            'Temperatura Atual' => $this->main->temp . ' ºC',
+            "Temperatura" => [
+                'Temperatura Atual' => $this->resource["Cidade"]->main->temp . '°C',
+                'Cidade' => $this->resource["Cidade"]->name,
+            ],
+            "Playlists" => [
+                'Links' => $this->resource["Playlists"],
+            ]
          ];
     }
 }

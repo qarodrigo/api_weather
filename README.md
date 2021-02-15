@@ -2,7 +2,15 @@
 
 # Objetivo
 
-Desenvolver uma API REST para a consulta de temperaturas em cidades por meio de uma API externa e sugerir músicas baseadas nas temperaturas.
+Desenvolver uma API REST para a consulta de temperaturas em cidades por meio de uma API externa e sugerir playlists baseadas nas temperaturas.
+
+    Temperatura | Estilo Musical
+    ------------ | -------------
+    `Acima de 30°C` | Musicas para Festa
+    `Entre 15°C e 30°C` | `Pop`
+    `Entre 10°C e 14°C` | `Rock`
+    `Abaixo de 10°C` | `Musica Classica`
+
 
 1. Rota Única
 
@@ -24,5 +32,5 @@ Desenvolver uma API REST para a consulta de temperaturas em cidades por meio de 
     Código | Resposta
     ------------ | -------------
     `200 (OK)` | {}
-    `404 (Requisição inválida)` | `Infome de qual cidade deseja saber a temperatura.`
+    `404 (Requisição inválida)` | `Informe de qual cidade deseja saber a temperatura.`
 
